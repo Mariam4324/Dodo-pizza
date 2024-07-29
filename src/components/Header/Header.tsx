@@ -2,6 +2,7 @@ import { Container } from "../../layout/Container/Container";
 import { Logo } from "../Logo/Logo";
 import css from "./Header.module.scss";
 import { Navigation } from "../Navigation/Navigation";
+import { PrimaryButton } from "../PrimaryButton/PrimaryButton";
 
 export const Header = () => {
   return (
@@ -20,7 +21,10 @@ export const Header = () => {
           </div>
         </div>
 
-        <Navigation />
+        <div className={css.header__nav}>
+          <Navigation />
+          <PrimaryButton buttonText={"Корзина"} />
+        </div>
       </Container>
     </header>
   );

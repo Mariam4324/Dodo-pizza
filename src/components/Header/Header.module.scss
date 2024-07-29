@@ -35,4 +35,11 @@
       color: #f96900;
     }
   }
+
+  &__nav {
+    margin-top: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
