@@ -8,9 +8,19 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
 img,
 a {
   display: block;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {

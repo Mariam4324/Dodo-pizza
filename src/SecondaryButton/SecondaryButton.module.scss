@@ -1,0 +1,19 @@
+.secondary-button {
+  min-width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  padding: 9px 20px;
+  background: #fff0e6;
+  color: #d15700;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s all;
+
+  &:hover {
+    background: #ffd0b2;
+    color: #d55406;
+  }
+}
