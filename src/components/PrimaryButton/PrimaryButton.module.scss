@@ -1,0 +1,19 @@
+.primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  padding: 9px 20px;
+  min-width: 104px;
+  height: 40px;
+  background: #f96900;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  transition: 0.3s all;
+
+  &:hover {
+    background: #ed5d08;
+  }
+}

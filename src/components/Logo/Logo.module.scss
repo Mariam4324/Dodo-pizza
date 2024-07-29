@@ -1,0 +1,31 @@
+.logo {
+  display: flex;
+  gap: 14.67px;
+
+  @media (max-width: 400px) {
+    align-items: center;
+    gap: 8.25px;
+  }
+
+  &__title {
+    max-width: 191.613px;
+    height: 22px;
+
+    @media (max-width: 400px) {
+      max-width: 125.318px;
+      height: 14.15px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 7px;
+    color: #343434;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+
+    @media (max-width: 400px) {
+      display: none;
+    }
+  }
+}
