@@ -23,7 +23,7 @@ export const Header = () => {
 
         <div className={css.header__nav}>
           <Navigation />
-          <Button classType={"primary-button"} buttonText={"корзина"} />
+          <Button type={"primary"} size={"standart"} buttonText={"корзина"} />
         </div>
       </Container>
     </header>
