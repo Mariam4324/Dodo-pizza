@@ -2,7 +2,7 @@ import { Container } from "../../layout/Container/Container";
 import { Logo } from "../Logo/Logo";
 import css from "./Header.module.scss";
 import { Navigation } from "../Navigation/Navigation";
-import { PrimaryButton } from "../PrimaryButton/PrimaryButton";
+import { Button } from "../Button/Button";
 
 export const Header = () => {
   return (
@@ -23,7 +23,7 @@ export const Header = () => {
 
         <div className={css.header__nav}>
           <Navigation />
-          <PrimaryButton buttonText={"Корзина"} />
+          <Button type={"primary"} size={"standart"} buttonText={"корзина"} />
         </div>
       </Container>
     </header>
