@@ -1,0 +1,15 @@
+.footer-nav {
+  &__title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
