@@ -4,7 +4,7 @@ import css from "./Button.module.scss";
 interface buttonProps {
   buttonText: string /* текст кнопки */;
   type: string /* primary, secondary */;
-  size: string /* primary, secondary */;
+  size: string /* standart, big*/;
 }
 
 export const Button = ({ buttonText, type, size }: buttonProps) => {
