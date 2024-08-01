@@ -1,3 +1,4 @@
+import { Button } from "../Button/Button";
 import s from "./ProductCard.module.scss";
 
 interface ProductCardProps {
@@ -6,7 +7,6 @@ interface ProductCardProps {
   description: string;
   price: number;
   buttonText: string;
-  isNew?: boolean;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -15,20 +15,20 @@ const ProductCard: React.FC<ProductCardProps> = ({
   description,
   price,
   buttonText,
-  isNew,
 }) => {
   return (
     <div className={s.card}>
-      <div className={s.cardImageContainer}>
-        {isNew && <span className={s.newBage}>NEW</span>}
-        <img src={image} alt={title} className={s.cardImage} />
+      <div className={s.card__image_container}>
+        <img src={image} alt={title} className={s.card__image} />
       </div>
-      <div className={s.cardContent}>
-        <h3 className={s.cardTitle}>{title}</h3>
-        <p className={s.cardDescription}>{description}</p>
-        <div className={s.cardFooter}>
-          <span className={s.cardPrice}>от {price} ₽</span>
-          <button className={s.cardButton}>{buttonText}</button>
+      <div className={s.card__content}>
+        <div className={s.card__ttl_descr_wr}>
+          <h3 className={s.card__title}>{title}</h3>
+          <p className={s.card__description}>{description}</p>
+        </div>
+        <div className={s.card__footer}>
+          <span className={s.card__price}>от {price} ₽</span>
+          <Button type="primary" size="standart" buttonText={buttonText} />
         </div>
       </div>
     </div>
