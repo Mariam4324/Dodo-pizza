@@ -1,22 +1,29 @@
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 
   &__wrapper {
     margin-top: 46px;
     display: flex;
     gap: 28px;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
   &__logo {
     max-width: 191px;
     height: 22px;
+
+    &_wrapper {
+      display: flex;
+      gap: 28px;
+    }
   }
 
   &__year {
-    color: #fff;  
+    color: #fff;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -43,6 +50,7 @@
   }
 
   &__icon {
+    cursor: pointer;
     width: 32px;
     height: 32px;
   }

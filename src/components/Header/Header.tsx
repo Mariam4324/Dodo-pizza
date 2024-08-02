@@ -12,7 +12,7 @@ export const Header = () => {
         <div className={css.header__wrapper}>
           <Logo />
 
-          <PhoneNumber />
+          <PhoneNumber numberColor={"black"} />
         </div>
 
         <div className={css.header__nav}>

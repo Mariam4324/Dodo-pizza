@@ -1,0 +1,33 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1060px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 320px;
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.slider__img {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+

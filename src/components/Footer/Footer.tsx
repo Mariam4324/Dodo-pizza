@@ -25,8 +25,8 @@ export const Footer = () => {
         </div>
 
         <div className={css["footer-info__wrapper"]}>
-          <FooterInfo footerInfoTitle={"1 396 362 874 ₽"} footerInfoSubtitle={"Выручка российской сети в этом месяце. В прошлом — 2 460 305 416 ₽"} />
-          <FooterInfo footerInfoTitle={"688 пиццерий"} footerInfoSubtitle={"в 14 странах, включая Китай, США и Великобританию"} />
+          <FooterInfo footerInfoValue={"1 396 362 874 ₽"} footerInfoSubtitle={"Выручка российской сети в этом месяце. В прошлом — 2 460 305 416 ₽"} />
+          <FooterInfo footerInfoValue={"688 пиццерий"} footerInfoSubtitle={"в 14 странах, включая Китай, США и Великобританию"} />
         </div>
 
         <div className={css.footer__line}></div>

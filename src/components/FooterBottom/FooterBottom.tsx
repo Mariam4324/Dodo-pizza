@@ -10,15 +10,28 @@ export const FooterBottom = () => {
   return (
     <div className={css["footer-bottom"]}>
       <div className={css["footer-bottom__wrapper"]}>
-        <img className={css["footer-bottom__logo"]} src={footerLogo} alt="" />
-
-        <span className={css["footer-bottom__year"]}>© {new Date().getFullYear()}</span>
+        <div className={css["footer-bottom__logo_wrapper"]}>
+          <img className={css["footer-bottom__logo"]} src={footerLogo} alt="logo" />
+          <span className={css["footer-bottom__year"]}>© {new Date().getFullYear()}</span>
+        </div>
 
         <nav className={css["footer-bottom__nav"]}>
           <ul className={css["footer-bottom__list"]}>
-            <li className={css["footer-bottom__item"]}>Правовая информация</li>
-            <li className={css["footer-bottom__item"]}>Калорийность и состав</li>
-            <li className={css["footer-bottom__item"]}>Помощь</li>
+            <li>
+              <a className={css["footer-bottom__item"]} href="#">
+                Правовая информация
+              </a>
+            </li>
+            <li>
+              <a className={css["footer-bottom__item"]} href="#">
+                Калорийность и состав
+              </a>
+            </li>
+            <li>
+              <a className={css["footer-bottom__item"]} href="#">
+                Помощь
+              </a>
+            </li>
           </ul>
         </nav>
 

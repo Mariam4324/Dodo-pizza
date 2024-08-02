@@ -1,0 +1,24 @@
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1000px;
+  width: 100%;
+  background: #f3f3f7;
+  max-width: 120px;
+  height: 40px;
+  padding: 9px 16px;
+
+  &__sign {
+    color: #73798c;
+    stroke-width: 2px;
+    font-size: 23px;
+  }
+
+  &__value {
+    color: #73798c;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

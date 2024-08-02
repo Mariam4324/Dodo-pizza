@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import Section from "./components/Section/Section";
 import ProductCard from "./components/ProductCard/ProductCard";
 import "./Global.css";
+import { Sliders } from "./components/Sliders/Sliders";
+import { CounterBtn } from "./components/CounterBtn/CounterBtn";
 
 interface Product {
   _id: string;
@@ -25,7 +26,7 @@ function App() {
   useEffect(() => {
     async function getProducts() {
       try {
-        const response = await fetch("http://localhost:5005/products");
+        const response = await fetch("http://localhost:5000/products");
         const result = await response.json();
         setProductsData(result);
       } catch (error) {
@@ -39,83 +40,39 @@ function App() {
   return (
     <>
       <Header />
+      <Sliders />
       <Section title={"Пицца"}>
         {productsData?.map((product) => {
           if (product.category === "pizza") {
-            return (
-              <ProductCard
-                key={product._id}
-                image={product.imageUrl}
-                title={product.name}
-                description={product.description}
-                price={product.price}
-                buttonText={product.collect ? "Собрать" : "Выбрать"}
-              />
-            );
+            return <ProductCard key={product._id} image={product.imageUrl} title={product.name} description={product.description} price={product.price} buttonText={product.collect ? "Собрать" : "Выбрать"} />;
           }
         })}
       </Section>
       <Section title={"Комбо"}>
         {productsData?.map((product) => {
           if (product.category === "combo") {
-            return (
-              <ProductCard
-                key={product._id}
-                image={product.imageUrl}
-                title={product.name}
-                description={product.description}
-                price={product.price}
-                buttonText={product.collect ? "Собрать" : "Выбрать"}
-              />
-            );
+            return <ProductCard key={product._id} image={product.imageUrl} title={product.name} description={product.description} price={product.price} buttonText={product.collect ? "Собрать" : "Выбрать"} />;
           }
         })}
       </Section>
       <Section title={"Закуски"}>
         {productsData?.map((product) => {
           if (product.category === "snack") {
-            return (
-              <ProductCard
-                key={product._id}
-                image={product.imageUrl}
-                title={product.name}
-                description={product.description}
-                price={product.price}
-                buttonText={product.collect ? "Собрать" : "Выбрать"}
-              />
-            );
+            return <ProductCard key={product._id} image={product.imageUrl} title={product.name} description={product.description} price={product.price} buttonText={product.collect ? "Собрать" : "Выбрать"} />;
           }
         })}
       </Section>
       <Section title={"Десерты"}>
         {productsData?.map((product) => {
           if (product.category === "dessert") {
-            return (
-              <ProductCard
-                key={product._id}
-                image={product.imageUrl}
-                title={product.name}
-                description={product.description}
-                price={product.price}
-                buttonText={product.collect ? "Собрать" : "Выбрать"}
-              />
-            );
+            return <ProductCard key={product._id} image={product.imageUrl} title={product.name} description={product.description} price={product.price} buttonText={product.collect ? "Собрать" : "Выбрать"} />;
           }
         })}
       </Section>
       <Section title={"Напитки"}>
         {productsData?.map((product) => {
           if (product.category === "drink") {
-            return (
-              <ProductCard
-                key={product._id}
-                image={product.imageUrl}
-                title={product.name}
-                description={product.description}
-                price={product.price}
-                buttonText={product.collect ? "Собрать" : "Выбрать"}
-              />
-            );
+            return <ProductCard key={product._id} image={product.imageUrl} title={product.name} description={product.description} price={product.price} buttonText={product.collect ? "Собрать" : "Выбрать"} />;
           }
         })}
       </Section>
