@@ -1,0 +1,12 @@
+.stores {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  margin-bottom: 29px;
+
+  &__app {
+    max-width: 135px;
+    height: 40px;
+    cursor: pointer;
+  }
+}

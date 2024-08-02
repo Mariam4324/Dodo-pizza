@@ -1,15 +1,29 @@
-.footer-nav {
-  &__title {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 26px;
+.footer {
+  &__wrapper {
+    max-width: 706px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
   }
-}
 
-.footer-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
+  &-nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+
+    &__title {
+      margin-bottom: 3px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+
+    &__link {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+  }
 }

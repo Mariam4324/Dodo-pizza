@@ -1,0 +1,38 @@
+.phone {
+  text-align: right;
+
+  @media (max-width: 400px) {
+    display: none;
+  }
+
+  &__number {
+    &_black {
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+      transition: 0.3s all;
+    }
+
+    &_white {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      transition: 0.3s all;
+    }
+  }
+
+  &__subtitle {
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s all;
+  }
+
+  &:hover &__number_black {
+    color: #f96900;
+  }
+
+  &:hover &__number_white {
+    color: #f96900;
+  }
+}
